@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <form action="/ScriptSeveur" >
+    <table border="0" width="80%" align="center">
+        <tr>
+            <td width="40%">Nom</td>
+            <td width="60%">
+                <input type="text" size="30"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Prénom</td>
+            <td><input type="text" size="30" /></td>
+        </tr>
+        <tr>
+            <td>Sexe</td>
+            <td>
+                <input type="radio" value="F"  name="sexe"/>Féminin
+                <input type="radio" value="M"  name="sexe"/>Masculin
+            </td>
+        </tr>
+        <tr>
+            <td>Date de naissance</td>
+           
+            <td>
+                <input type="date" name="date"/>
+            </td>
+        </tr>
+        <tr>
+            <td>Niveau d'étude</td>
+            <td>
+                <select name="niveau" size="2">
+                    <option value="1">1ere année</option>
+                    <option value="2">2ere année</option>
+                    <option value="3">3ere année</option>
+                </select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Spécialité</td>
+            <td>
+                <input list="spécialité" />
+                <datalist id="spécialité">
+                    <option>Telecom</option>
+                    <option>Informatique</option>
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>Telephone</td>
+            <td>
+                <input type="tel" />
+            </td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td><input type="email" /></td>
+        </tr>
+        <tr>
+            <td>Site web personnel</td>
+            <td>
+                <input type="url" />
+            </td>
+        </tr>
+        <tr>
+            <td>Adresse</td>
+            <td>
+                <textarea rows="5" cols="30"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td>
+                <input type="file" accept=".jpeg,.png" />
+            </td>
+        </tr>
+    </table>
+    
+        <input type="submit" value="Envoyer"/>
+    </form>
+</body>
+</html>
